@@ -4,16 +4,27 @@ Deploying a 3-Tier Architecture in AWS Using Terraform
 Resources need to be Created / Installed
 
 1] 1 VPC
+
 2] 2 Subnet (Public)
+
 3] 1 Subnet (Private)
+
 4] Internet Gateway
+
 5] Route Tabel
+
 6] Elastic IP
+
 7] Nat Gateway
+
 8] Security Group
+
 9] EC2 Instance
+
 10] Application Load Balancer
+
 11] Apache WebServer
+
 12] MySQL DB Server
 
 
