@@ -1,0 +1,125 @@
+Deploying a 3-Tier Architecture in AWS Using Terraform
+
+Step 1
+```````
+First Install Terraform on AWS Instance 
+
+Or 
+
+You can also install it on Windows
+
+
+Step 2
+```````
+Now First Create provider.tf file
+
+In this script you have to mention your working region and Access and Secret key
+
+
+Step 3
+```````
+Create vpc.tf file
+
+
+Step 4
+```````
+Create subnet.tf file
+
+Change Availabilty Zone as you mention in provider.tf script
+
+
+Step 5
+```````
+Create variables.tf file
+
+Here also make changes in AZ.
+
+
+Step 6
+```````
+Create internetgw.tf file
+
+
+Step 7
+```````
+Create eip.tf
+
+
+Step 8
+``````
+Create natgw.tf
+
+
+Step 9
+````````
+Create route-tb.tf
+
+
+Step 10
+````````
+Create sg.tf
+
+
+Step 11
+````````
+Create ec2.tf
+
+Here in this script you have to make changes in ami-ID and Key-name as per your requriements
+
+Also make change in Provisioner destination. Enter Your Key Path here.
+
+
+Step 12
+````````
+After Creating all this file now run all this by using terraform commands
+
+After Creating all resources then login into both webserver and install Apache server in this both webserver.
+
+Also create index.html file in var/www/html path on both WebServer. Add Server_1 and Server_2 message in both
+
+webserver respectively.
+
+Now we have to install mySQL server in DBServer. Our DBServer is Private Server so to access this server we
+
+have to login through our public webserver.
+
+After login into DBServer Install mySQL Server in this.
+
+
+Step 13
+````````
+Now Create alb.tf file
+
+
+Step 14
+```````
+Now Our all script are done so run terraform commands
+
+
+After creating all this now copy loadbalancer DNS and paste it in browser.
+
+If it showing Message from index.html file then our project is successfully Done.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
